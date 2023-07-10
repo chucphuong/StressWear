@@ -38,10 +38,8 @@
     <div class="card-body p-4 p-sm-5 content-group">
       <div class="content-group-title">
         <h3 class="text-center text-center title-page-main">Tạo Mật Khẩu Mới</h3>
-        <h5 th:style="${'color-green'}" class="text-center title-page-sub">Form nhập email xác nhận</h5>
-        <!-- <h5 th:style="${'color-green'}" class="class="text-center title-page-sub" th:text="${success}"></h5> -->
       </div>
-      <form th:action="@{/User/repass}" method="post" class="needs-validation"
+      <form action="#" method="post" class="needs-validation"
         novalidate>
         <div class="form-group my-4">
           <label for="password1">Mật khẩu Mới</label>
@@ -56,9 +54,7 @@
               Không được bỏ trống.
             </div>
           </div>
-          <div th:style="${'color: red'}" th:if="${error}">
-            <p th:text="${error}"></p>
-          </div>
+        
         </div>
         <div class="form-group my-4">
           <label for="password2 ">Nhập Lại Mật Khẩu Mới</label>
@@ -73,9 +69,7 @@
               Không được bỏ trống.
             </div>
           </div>
-          <div th:style="${'color: red'}" th:if="${error1}">
-            <p th:text="${error1}"></p>
-          </div>
+       
         </div>
         <div class="d-grid my-5">
           <button class="btn btn-dark btn-login text-uppercase fw-bold" type="submit">Tạo Mật Khẩu

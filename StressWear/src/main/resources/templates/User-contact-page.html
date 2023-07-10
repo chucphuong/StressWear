@@ -49,33 +49,17 @@
 				
 				<div class="my-4">
 							<label class="form-label" for="name">Họ và tên của bạn</label> <input
-								type="text" class="form-control" th:field="*{subject}" id="subject" name="subject"
+								type="text" class="form-control" id="subject" name="subject"
 								placeholder="Nhập họ và tên của bạn">
-								<div class="text-danger" th:if="${#fields.hasErrors('subject')}" th:errors="*{subject}"></div>
+								<div class="text-danger"></div>
                    		
 				</div>
-				<!-- <div class="row d-flex">
-					<div class="col-6">
-						<div class="form-group">
-							<label class="form-label" for="name">Họ của bạn</label> <input
-								type="text" class="form-control" id="subject" name="subject"
-								placeholder="Nhập họ của bạn">
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="form-group">
-							<label class="form-label" for="name">Tên của bạn</label> <input
-								type="text" class="form-control" id="name" name="subject"
-								placeholder="Nhập tên của bạn">
-
-						</div>
-					</div>
-				</div> -->
+				
 				<div class="my-4">
 					<label class="form-label" for="name">Email</label> <input
-						type="text" class="form-control" id="name" name="from" th:field="*{from}"	placeholder="you@company.com">
-						<input hidden="true" type="text" value="lehoangthao2410@gmail.com" id="admin" name="to"/>
-						<div class="text-danger" th:if="${#fields.hasErrors('from')}" th:errors="*{from}"></div>
+						type="text" class="form-control" id="name" name="from"	placeholder="you@company.com">
+						<input hidden="true" type="text" id="admin" name="to"/>
+						<div class="text-danger"></div>
                    		
 						
 				</div>
@@ -83,12 +67,6 @@
 					<label for="" class="form-label">Số điện thoại</label> <input
 						type="text" name="body" id="" class="form-control"
 						placeholder="Nhập số điện thoại ">
-						<!-- <div class="text-danger" th:if="${#fields.hasErrors('subject')}" th:errors="*{subject}"></div> -->
-                   		
-					<!-- <select name="" id="" class="form-control">
-                        
-                        <option value="">+84 (555) 000-0000</option>
-                      </select> -->
 				</div>
 				<div class="my-4">
 					<input type="file" name="attach" class="form-control"/>
@@ -97,7 +75,6 @@
 				<div class="my-4">
 					<label for="" class="form-label">Lời nhắn</label>
 					<textarea class="form-control" name="body" id="" cols="30" rows="6"></textarea>
-					<!-- <div class="text-danger" th:if="${#fields.hasErrors('body')}" th:errors="*{body}"></div> -->
 				</div>
 				
 				<div class="my-2 d-flex">
@@ -106,12 +83,6 @@
 						sách bảo mật của chúng tôi.</label>
 				</div>
 				<button class="btn btn-contact">Gửi lời nhắn</button>
-			</form>
-			<div class="text-primary" th:text="${message}"></div>
-			
-		    <div class="text-danger" th:text="${error}"></div>
-			
-			
 		</div>
 		<div class="col-4 offset-1">
 			<div class="banner-contact my-5">

@@ -36,10 +36,8 @@
       <div class="card-body p-4 p-sm-5 content-group">
         <div class="content-group-title">
           <h3 class="text-center title-page-main">Quên Mật Khẩu</h3>
-          <h5 th:style="${'color-green'}" class="text-center title-page-sub">Form nhập email xác nhận</h5>
-          <h5 th:style="${'color-green'}" class="title-page-sub" th:text="${success}"></h5>
         </div>
-        <form id="myForm" th:action="@{/User/forgotPass}" method="post"
+        <form id="myForm" action="#" method="post"
           class="needs-validation" novalidate enctype="multipart/form-data">
           <div class="form-group my-4">
             <label for="" class="form-label">Email</label>
@@ -50,9 +48,7 @@
                 Không được bỏ trống hoặc Sai định dạng
               </div>
             </div>
-            <div th:style="${'color: red'}" th:if="${message}">
-              <p th:text="${message}"></p>
-            </div>
+           
           </div>
           <div class="g-recaptcha" data-sitekey="6LcVzJsmAAAAAK282Wlq2Zhg40-S8lV_kGUE3BYq"></div>
           <div id="recaptchaError" style="color: red;"></div>

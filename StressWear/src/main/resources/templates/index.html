@@ -33,8 +33,39 @@
 </head>
 
 <body>
-    <nav th:unless="${onRegistered}" th:include="components/header-unregistered"></nav>
-    <nav th:if="${onRegistered}" th:include="components/header-registered"></nav>
+    <!-- Menu Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="/"><img src="/img/Logowebsite.png" style="background-color: var(--gray_25);" alt=""></a>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav item-menu">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/User/about">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/User/contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="/User/blog">Bài viết</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover has-megamenu">
+                        <a class="nav-link text-dark" href="/User/product"> Sản phẩm <i class="bi bi-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav item-menu ms-auto signin-group">
+                <li class="nav-item">
+                    <a class="nav-link login" href="/User/login">Đăng nhập</a>
+                </li>
+                <li class="nav-item sign-navbar ">
+                    <a class="nav-link sigin" href="/User/register">Đăng ký</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hết Menu Nav -->
+    <!-- <nav th:unless="${onRegistered}" th:include="components/header-unregistered"></nav>
+    <nav th:if="${onRegistered}" th:include="components/header-registered"></nav> -->
     <header id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
         data-bs-delay="1000">
         <ol class="carousel-indicators mb-4">
@@ -168,10 +199,10 @@ tạo để tạo ra một không gian sống đẹp mắt và hài hòa.
                 <div class="col-6 col-md-3 mb-3 menu-footer">
                     <h5>Sản phẩm</h5>
                     <ul class="nav flex-column footer-link">
-                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">BÀN - tables</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">SOFA - sofas</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">TỦ - cabinets</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">GHẾ - chairs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">Giày- tables</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">Quần - sofas</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">Áo - cabinets</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">Phụ kiện  - chairs</a></li>
                         <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">ĐÈN - lamps</a></li>
                         <li class="nav-item mb-2"><a href="#" class="text-footer p-0 ">KỆ - shelf units</a></li>
                     </ul>
