@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
 	
-
-	
 	@GetMapping("/login-page")
 	public String getLoginPage() {
 		return "dangnhap";
